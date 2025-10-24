@@ -223,6 +223,7 @@ exports.getName = function (code, lang, options = {}) {
     const codeMaps = registeredLocales[lang.toLowerCase()];
     const nameList = codeMaps[toAlpha2(code)];
     return filterNameBy(options.select, nameList);
+    // eslint-disable-next-line no-unused-vars
   } catch (err) {
     return undefined;
   }
@@ -274,6 +275,7 @@ exports.getAlpha2Code = function (name, lang) {
       }
     }
     return undefined;
+    // eslint-disable-next-line no-unused-vars
   } catch (err) {
     return undefined;
   }
@@ -308,6 +310,7 @@ exports.getSimpleAlpha2Code = function (name, lang) {
       }
     }
     return undefined;
+    // eslint-disable-next-line no-unused-vars
   } catch (err) {
     return undefined;
   }
